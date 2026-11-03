@@ -3,7 +3,7 @@ const jwt = require("jsonwebtoken");
 const ApiError = require("./apiError");
 const UserModel = require("../models/UserModel");
 
-class UserAuth{
+class UserAuth {
   //  1) check if token exists, if exists get it
   getToken(authorizationHeader) {
     let token;
@@ -46,6 +46,6 @@ class UserAuth{
     }
     return true;
   }
+}
 
-  
 module.exports = UserAuth;
